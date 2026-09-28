@@ -1,0 +1,9 @@
+matplotlib==3.11.2
+numpy==2.5.3
+pesq==0.0.4
+pystoi==0.4.1
+pytest==9.1.1
+PyWavelets==1.10.0
+ruff==0.16.8
+scipy==1.18.1
+soundfile==0.14.0

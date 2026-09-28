@@ -1,0 +1,242 @@
+{
+  "config": {
+    "AUDIO_DIR": "audio_out",
+    "CLEAN_DIR": "data/clean",
+    "CLICK_DECAY_S": 0.0005,
+    "CLICK_FIRST_S": 0.05,
+    "CLICK_LEN_S": 0.002,
+    "CLICK_PERIOD_S": 0.1,
+    "CLICK_PLOT_PAIR": 9,
+    "CLICK_SNR_DB": 10.0,
+    "CLICK_TRAIN_S": 2.0,
+    "COLA_FIG_WINDOWS": 8,
+    "COLA_TOL": 1e-12,
+    "DATA_DIR": "data",
+    "DOWNLOAD_TIMEOUT_S": 120,
+    "ENVELOPE_HALF_S": 0.03,
+    "ENVELOPE_SMOOTH_S": 0.001,
+    "FIGURES_DIR": "figures",
+    "FIG_DPI": 300,
+    "FRAME_LEN": 256,
+    "FS": 8000,
+    "HOP": 128,
+    "LEAD_IN_S": 0.25,
+    "MAD_TO_SIGMA": 0.6745,
+    "NFFT": 256,
+    "NOISE_TYPES": [
+      "white",
+      "babble"
+    ],
+    "NOIZEUS_URL": "https://ecs.utdallas.edu/loizou/speech/noizeus/clean.zip",
+    "N_BABBLE_TALKERS": 6,
+    "N_LEAD": 2000,
+    "N_NOIZEUS_SENTENCES": 30,
+    "ONSET_FRAME_S": 0.0025,
+    "ONSET_QUIET_GAP_S": 0.02,
+    "PESQ_MODE": "nb",
+    "PESQ_SUSPECT_D_PESQ": 0.5,
+    "PESQ_SUSPECT_D_STOI": -0.1,
+    "PESQ_UNSTABLE_JUMP": 0.5,
+    "PLOSIVE_SNR_DB": 5,
+    "QUICK_N_SENTENCES": 3,
+    "QUICK_SNRS_DB": [
+      0,
+      5,
+      10
+    ],
+    "RESULTS_DIR": "results",
+    "ROOT": ".",
+    "SEED": 0,
+    "SEGSNR_EPS": 1e-20,
+    "SEGSNR_FRAME": 256,
+    "SEGSNR_GATE_DB": -40.0,
+    "SEGSNR_MAX_DB": 35.0,
+    "SEGSNR_MIN_DB": -10.0,
+    "SNRS_DB": [
+      -5,
+      0,
+      5,
+      10,
+      15
+    ],
+    "SPEAKERS_CSV": "data/speakers.csv",
+    "SPEC_DYN_RANGE_DB": 80.0,
+    "SPEC_FLOOR_DB": -100.0,
+    "SS_ALPHA": 2.0,
+    "SS_ALPHA_GRID": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0
+    ],
+    "SS_BETA": 0.02,
+    "SS_BETA_GRID": [
+      0.0,
+      0.005,
+      0.01,
+      0.02,
+      0.05,
+      0.1
+    ],
+    "STFT_CHECK_LENGTHS": [
+      12345,
+      256,
+      257,
+      128,
+      100
+    ],
+    "STOI_EXTENDED": false,
+    "SYNTH_BURST_LEVEL": 1.0,
+    "SYNTH_BURST_S": 0.005,
+    "SYNTH_DURATION_S": 3.0,
+    "SYNTH_F0_RANGE_HZ": [
+      100.0,
+      220.0
+    ],
+    "SYNTH_FORMANT_BW_HZ": [
+      80.0,
+      150.0
+    ],
+    "SYNTH_FORMANT_RANGES_HZ": [
+      [
+        300.0,
+        800.0
+      ],
+      [
+        900.0,
+        2500.0
+      ],
+      [
+        2500.0,
+        3500.0
+      ]
+    ],
+    "SYNTH_FRIC_CUTOFF_HZ": 2000.0,
+    "SYNTH_FRIC_DUR_S": [
+      0.03,
+      0.08
+    ],
+    "SYNTH_FRIC_LEVEL": 0.3,
+    "SYNTH_FRIC_ORDER": 4,
+    "SYNTH_HARMONIC_MAX_HZ": 3500.0,
+    "SYNTH_LEAD_SILENCE_S": 0.3,
+    "SYNTH_LEVEL_DB": [
+      -10.0,
+      0.0
+    ],
+    "SYNTH_N_FORMANTS": [
+      2,
+      3
+    ],
+    "SYNTH_N_SENTENCES": 30,
+    "SYNTH_ONSET_PROBS": [
+      0.4,
+      0.3,
+      0.3
+    ],
+    "SYNTH_PAUSE_S": [
+      0.05,
+      0.2
+    ],
+    "SYNTH_PEAK": 0.5,
+    "SYNTH_PLOSIVE_GAP_S": 0.03,
+    "SYNTH_RAMP_S": 0.02,
+    "SYNTH_STREAM": 1000000,
+    "SYNTH_VOICED_DUR_S": [
+      0.15,
+      0.3
+    ],
+    "TRANSIENT_CORE_S": 0.0025,
+    "TRANSIENT_PRE_S": 0.01,
+    "TRANSIENT_STREAM": 2000000,
+    "TRANSIENT_WIDE_S": 0.025,
+    "WAVELET": "db8",
+    "WAVELET_FAMILIES": [
+      "db4",
+      "db8",
+      "sym8"
+    ],
+    "WAVELET_LEVEL": 5,
+    "WAVELET_LEVELS": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "WAVELET_MODE": "periodization",
+    "WAVELET_VARIANT": "universal",
+    "WAVELET_VARIANTS": [
+      "universal",
+      "level_dependent"
+    ],
+    "WAV_PEAK": 0.99,
+    "WIENER_ETA": 0.98,
+    "WIENER_ETA_GRID": [
+      0.5,
+      0.9,
+      0.95,
+      0.98,
+      0.99
+    ],
+    "WIENER_PSD_FLOOR": 1e-20,
+    "WIENER_XI_MIN_DB": -25.0,
+    "WINDOW": "hann"
+  },
+  "run": {
+    "quick": false,
+    "synthetic": false,
+    "perceptual": true,
+    "dataset": "NOIZEUS",
+    "sentences": [
+      "sp01",
+      "sp02",
+      "sp03",
+      "sp04",
+      "sp05",
+      "sp06",
+      "sp07",
+      "sp08",
+      "sp09",
+      "sp10",
+      "sp11",
+      "sp12",
+      "sp13",
+      "sp14",
+      "sp15",
+      "sp16",
+      "sp17",
+      "sp18",
+      "sp19",
+      "sp20",
+      "sp21",
+      "sp22",
+      "sp23",
+      "sp24",
+      "sp25",
+      "sp26",
+      "sp27",
+      "sp28",
+      "sp29",
+      "sp30"
+    ],
+    "snrs_db": [
+      -5,
+      0,
+      5,
+      10,
+      15
+    ],
+    "default_configs": [
+      "SS a=2 b=0.02",
+      "Wiener eta=0.98",
+      "Wavelet db8 L5 universal",
+      "Wavelet db8 L5 level_dependent"
+    ],
+    "sweep_sizes": {
+      "spectral_sub": 30,
+      "wiener": 5,
+      "wavelet": 24
+    }
+  }
+}
