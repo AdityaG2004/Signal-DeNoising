@@ -1,8 +1,5 @@
 # Speech Denoising in the STFT Domain: A Comparative Study of Classical DSP Methods
 
-EE 317 Digital Signal Processing, IIT Indore.
-Aditya Gandhra (230002004) and Moreshwar Khampariya (230002043).
-
 This repository implements three classical speech denoisers directly from their equations:
 
 - spectral subtraction with over-subtraction and a spectral floor (Boll 1979; Berouti et al. 1979);
@@ -10,8 +7,6 @@ This repository implements three classical speech denoisers directly from their 
 - wavelet soft thresholding with universal and level-dependent thresholds (Donoho 1995; Johnstone & Silverman 1997).
 
 It compares them on the 30 NOIZEUS sentences (8 kHz) corrupted by white and babble noise at −5 to 15 dB input SNR, using segmental SNR, narrowband PESQ and STOI. The two Fourier methods share a perfect-reconstruction STFT framework (periodic Hann, 32 ms frames, 50 % overlap). Everything is seeded: one command regenerates every CSV, figure and WAV, byte-identically.
-
-The design is in `midsem-report.pdf`. `CLAUDE.md` lists the corrections applied to it and logs every build decision. `results/FINDINGS.md` summarises the results, and `AUDIT.md` records the final verification.
 
 ## Setup
 
